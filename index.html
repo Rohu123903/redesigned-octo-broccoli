@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        nav,
+        ul {
+            height: 90px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        nav,
+        ul,
+        li {
+            list-style: none;
+            padding: 0 30px;
+        }
+
+        nav,
+        ul,
+        li,
+        a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 0 30px;
+        }
+
+        nav,
+        ul,
+        li,
+        a:hover {
+            color: rgb(145, 9, 187);
+            font-style: bold;
+        }
+
+        header {
+            background-color: rgb(10, 4, 24);
+
+        }
+
+        footer {
+            background-color: rgb(10, 4, 24);
+            color: aliceblue;
+            height: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+
+        .container {
+            min-height: calc(90vh - 90px - 70px);
+            background-color: black;
+            display: flex;
+            margin: 23px auto;
+            width: 40%;
+            color: white;
+            border-radius: 12px;
+            padding: 34px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .container1 {
+            background-color: black;
+
+            margin: 23px auto;
+            width: 40%;
+            color: white;
+            border-radius: 12px;
+            padding: 34px;
+            right: 0;
+            min-height: calc(90vh - 90px - 70px);
+
+        }
+
+        .mg {
+            padding: 0 200px;
+            background-color: cadetblue;
+            border: solid 0.5rem antiquewhite;
+            border-radius: 1rem;
+        }
+
+        .mg1 {
+            background-color: darkgreen;
+            border-radius: 1rem;
+            border: solid;
+        }
+
+        .box2 {
+            background-color: rgb(199, 119, 39);
+
+        }
+
+        .box {
+            background-color: darkmagenta;
+
+        }
+
+        .box3 {
+            background-color: firebrick;
+        }
+
+        .box4 {
+            background-color: goldenrod;
+        }
+
+        .container2 {
+            background-color: black;
+            transition-property: none;
+            margin: 23px auto;
+            width: 40%;
+            color: white;
+            border-radius: 12px;
+            padding: 34px;
+            right: 0;
+            min-height: calc(90vh - 90px - 70px);
+
+        }
+
+        .fg {
+            padding: 0 200px;
+            background-color: cadetblue;
+            border: solid 0.5rem antiquewhite;
+            border-radius: 1rem;
+        }
+
+        .web,
+        .web1,
+        .web2,
+        .web3,
+        .web4 {
+            background-color: darkgreen;
+            width: 320px;
+            border-radius: 1rem;
+            border: solid;
+        }
+
+        .img1 {
+            padding: 0 50px;
+        }
+
+        .img2 {
+            padding: 0 70px;
+        }
+
+        .img3,
+        .img4 {
+            padding: 0 60px;
+        }
+
+        .container.clicked,
+        .container1.clicked,
+        .container2.clicked,
+        .mm.clicked {
+            animation: clickEffect 0.3s ease-in-out;
+           
+        }
+
+        .xx {
+            background-color:cadetblue;
+            border: solid;
+        }
+
+        @keyframes clickEffect {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const containers = document.querySelectorAll(".container, .container1, .container2 ,.mm");
+
+            containers.forEach(container => {
+                container.addEventListener("click", function () {
+                    container.classList.add("clicked");
+
+                    // Remove the class after animation ends
+                    setTimeout(() => {
+                        container.classList.remove("clicked");
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="mm" src="c:\Users\Dell\Pictures\Screenshots\take.png" alt="" height="65px">
+            </div>
+            <ul>
+                <li><a class="xx" href="INTRO">INTRO</a></li>
+                <li><a class="xx" href="BENEFITS">BENEFITS</a></li>
+                <li><a class="xx" href="PRODUCTS">PRODUCTS</a></li>
+                <li><a class="xx" href="ORGANIZATION">ORGANIZATION</a></li>
+                <li><a class="xx" href="HIRING">HIRING</a></li>
+            </ul>
+            <div class="search">
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Take It Ideas Innovative Solutions Pvt. Ltd.
+                <img src="https://themindcollection.com/wp-content/uploads/2021/10/Interesting-ideas_830.png" alt=""
+                    height="100px">
+            </h1>
+            <br>
+            <hr>
+            <hr>
+            <h4> Take It Ideas Innovative Solutions Pvt Ltd is a Tech start-up
+                specializing in the software development domain. With a primary
+                objective to enhance work efficiency and performance for both individuals
+                and industries, our firm is committed to crafting innovative solutions.
+                We leverage design thinking methodologies alongside visual excellence
+                to streamline our clients' business processes, ensuring simplicity, ease,
+                and effectiveness in every project we undertake.
+                <hr>
+                We are on a mission to drive large-scale digital enablement of Indian MSMEs by providing extensive skill
+                development, internships, and employment opportunities in the technology sector. We aim to offer
+                affordable, high-volume technology solutions tailored to the needs of MSMEs.
+            </h4>
+        </div>
+        <div class="container1">
+            <h1 class="mg">BENEFITS</h1>
+            <br>
+            <h2 class="mg1"> What are the benefits working with Take It Ideas?</h2>
+            <br>
+            <div class="box">
+                <h3>We save your money</h3>
+                Software Development is a money intensive Activity. We always keep you well informed where you are
+                spending and why. So that you only spend where it's really worth it.
+            </div>
+            <hr>
+            <br>
+            <div class="box2">
+                <h3>We educate our clients to make better technology decisions</h3>
+                Software development is a never a one time activity. One idea leads to another. We educate our clients
+                so that they are fully aware what they want now and what they need later.
+            </div>
+            <hr>
+            <br>
+            <div class="box3">
+                <h3>Partner in Digital Enablement for Upscaling</h3>
+                With our clients, we always see a long term relationship. We not just offer technology services, but
+                also keep our client well informed what all possibilities are there. It's a win-win relationship.
+            </div>
+            <hr>
+            <br>
+            <div class="box4">
+                <h3>Clarity, transparency and Communication</h3>
+                Clarity, transparency and communication are the key factor why our clients are well informed about the
+                progress of the software development.
+            </div>
+            <hr>
+        </div>
+        <div class="container2">
+            <h1 class="fg">PRODUCTS</h1>
+            <br>
+            <div class="web">
+                <h2 class="fg1">RDF Business Process Studio</h2>
+            </div>
+            <br>
+            <div class="img1">
+                <img src="	https://www.takeitideas.in/home/p1.png" alt="" height="150px">
+            </div>
+            <br><br>
+            <div class="web1">
+                <h2 class="fg1">RDF Form/Grid/Page</h2>
+            </div>
+            <br>
+            <div class="img2">
+                <img src="	https://www.takeitideas.in/home/p21.png" alt="" height="150px">
+            </div>
+            <br>
+            <div class="web3">
+                <h2 class="fg1">RDF App</h2>
+            </div>
+            <br>
+            <div class="img3">
+                <img src="https://www.takeitideas.in/home/p31.png" alt="" height="150px">
+            </div>
+            <div class="web4">
+                <h2 class="fg1">College App Store</h2>
+            </div>
+            <br>
+            <div class="img4">
+                <img src="https://www.takeitideas.in/home/p41.png" alt="" height="150px">
+                <br>
+                Now Develop your Apps as per your needs and store in your personal App Store. No more dependency on any
+                IT Vendor. You use it, you own it, you control it without any 3rd party.
+            </div>
+        </div>
+    </main>
+    <footer class="flex">
+        <p>Design, Developed and Maintained By<a href="https://takeitideas.in/">www.takeitideas.in</a></p>
+    </footer>
+</body>
+
+</html>
