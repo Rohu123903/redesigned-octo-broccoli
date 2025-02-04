@@ -12,7 +12,7 @@
         }
 
         body {
-            background-color: antiquewhite;
+           background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220617/pngtree-decent-green-water-color-background-image_1413931.jpg);
         }
 
         nav,
@@ -21,7 +21,6 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
         }
 
         nav,
@@ -82,7 +81,6 @@
 
         .container1 {
             background-color: black;
-
             margin: 23px auto;
             width: 40%;
             color: white;
@@ -173,13 +171,43 @@
         .container2.clicked,
         .mm.clicked {
             animation: clickEffect 0.3s ease-in-out;
-           
+        
         }
 
         .xx {
             background-color:cadetblue;
             border: solid;
         }
+
+        @media screen and (max-width:700px) {
+
+         body{
+            background-color: aqua;
+         } 
+         nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            ul li {
+                padding: 8px 0;
+            }
+
+            .container, .container1, .container2 {
+                width: 100%;
+                padding: 15px 0;
+            }
+         
+
+           
+        }
+            
+        
 
         @keyframes clickEffect {
             0% {
@@ -194,6 +222,7 @@
                 transform: scale(1);
             }
         }
+        
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -217,12 +246,12 @@
     <header>
         <nav>
             <div class="logo">
-                <img class="mm" src="c:\Users\Dell\Pictures\Screenshots\take.png" alt="" height="65px">
+                <img class="mm" src="https://files.oaiusercontent.com/file-W9QPRE288qopKG3GtTvJBE?se=2025-01-30T16%3A45%3A47Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D59bf6400-e6fe-4e27-9412-865e6ef93309.webp&sig=a/i4joksnMXee2Kh0CZA6RF%2ByjMHGJVFTM7CeltVsNA%3D" alt="" height="65px">
             </div>
             <ul>
-                <li><a class="xx" href="INTRO">INTRO</a></li>
+                <li><a class="xx" href="">INTRO</a></li>
                 <li><a class="xx" href="BENEFITS">BENEFITS</a></li>
-                <li><a class="xx" href="PRODUCTS">PRODUCTS</a></li>
+                <li><a class="xx" href="https://takeitideas.in/home/Employment/ResumeBuilder/UserRegistrationModule/RDFView.php?ui=loginUI ">PRODUCTS</a></li>
                 <li><a class="xx" href="ORGANIZATION">ORGANIZATION</a></li>
                 <li><a class="xx" href="HIRING">HIRING</a></li>
             </ul>
